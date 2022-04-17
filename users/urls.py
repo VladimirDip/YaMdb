@@ -5,8 +5,8 @@ from rest_framework_simplejwt.views import TokenRefreshView
 from users.views import UserViewSet, get_confirmation_code, get_jwt_token
 
 router_v1 = DefaultRouter()
-router_v1.register('user', UserViewSet)
-print(router_v1.urls)
+router_v1.register('users', UserViewSet)
+
 
 auth_patterns = [
     path('email/', get_confirmation_code, name='get_confirmation_code'),
