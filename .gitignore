@@ -1,6 +1,7 @@
 .git/*
 env/
 venv/
+sent_mails/
 
 __pycache__/
 *.py[cod]
