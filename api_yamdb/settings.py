@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     'api_resurse.apps.ApiResurseConfig',
     'users.apps.ApiAuthorizationConfig',
+    'comments.apps.CommentsConfig'
 ]
 
 MIDDLEWARE = [

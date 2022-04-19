@@ -40,7 +40,7 @@ class CategoryViewSet(MixinView):
 
 
 class TitleViewSet(viewsets.ModelViewSet):
-    queryset = Titles.objects.all()
+    queryset = Titles.objects.annotate(rating = Avg('reviews__score'))
     filter_backends = [DjangoFilterBackend]
     filterset_class = TitleFilter
     permission_classes = [IsAdminOnReadOnly,]

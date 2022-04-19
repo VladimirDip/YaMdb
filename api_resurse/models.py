@@ -62,31 +62,4 @@ class Genres(models.Model):
         verbose_name = 'Genre'
 
 
-# class Reviews(models.Model):
-#     title = models.ForeignKey('Titles', on_delete=models.CASCADE, related_name='reviews')
-#     text = models.TextField()
-#     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reviews')
-#     score = models.IntegerField()
-#     pub_date = models.DateTimeField('date published', auto_now_add=True)
-#
-#     class Meta:
-#         verbose_name = 'Отзыв'
-#         verbose_name_plural = 'Отзывы'
-#
-#
-# class Comments(models.Model):
-#     review = models.ForeignKey('Reviews', on_delete=models.CASCADE, related_name='comments')
-#     text = models.TextField()
-#     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
-#     pub_date = models.DateTimeField('date published', auto_now_add=True)
 
-
-# class Genre_title(models.Model):
-#     title = models.ForeignKey('Titles', on_delete=models.SET_NULL,
-#                               related_name='title',
-#                               blank=True,
-#                               null=True)
-#     genre = models.ForeignKey('Genres', on_delete=models.SET_NULL,
-#                               related_name='genre',
-#                               blank=True,
-#                               null=True)
